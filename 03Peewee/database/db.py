@@ -37,8 +37,8 @@ class CUSTOMERS(BaseModel):
 
 class ORDERS(BaseModel):
     id              = IntegerField(db_column='id', primary_key= True)
-    product_id      = ForeignKeyField(PRODUCTS, db_column='product_id', backref='id')
-    customer_id     = ForeignKeyField(PRODUCTS, db_column='customer_id', backref='id')
+    product_id      = ForeignKeyField(PRODUCTS, db_column='product_id', backref='orders')
+    customer_id     = ForeignKeyField(CUSTOMERS, db_column='customer_id', backref='orders')
     order_time      = DateTimeField (db_column='order_time')
 
     class Meta:

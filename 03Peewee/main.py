@@ -1,8 +1,6 @@
 from database.db import PRODUCTS, CUSTOMERS, ORDERS
 # from playhouse.shortcuts import model_to_dict, dict_to_model
 
-import json
-
 
 # list_product = PRODUCTS.select()
 
@@ -104,8 +102,8 @@ select * from customers
 where last_name in ("Taylor","Bluth")
 and first_name not in ("Sarah");
 """
-querry = CUSTOMERS.select() \
-        .where( ( CUSTOMERS.last_name.in_(["Taylor","Bluth"]) ) & (CUSTOMERS.first_name.not_in(["Sarah"]) ) )
+# querry = CUSTOMERS.select() \
+#         .where( ( CUSTOMERS.last_name.in_(["Taylor","Bluth"]) ) & (CUSTOMERS.first_name.not_in(["Sarah"]) ) )
 
 
 
@@ -305,6 +303,18 @@ select name, price as retails_price, coffee_origin from products;
 
 
 
+"""
+---------------------------JOIN
+"""
+
+"""
+select products.name, orders.order_time from orders 
+inner join products on orders.product_id = products.id;
+"""
+
+querry = (ORDERS.select().join(
+    PRODUCTS, on = (ORDERS.product_id == PRODUCTS.id) ))
+
 dataDict = list(querry.dicts()) 
-for data in dataDict:
+for data in querry:
     print(data)
