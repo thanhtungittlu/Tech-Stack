@@ -1,7 +1,14 @@
--- use coffee_store;
+use coffee_store;
 
 select * from products;
 select * from orders;
+select * from customers;
+
+describe products;
+describe orders;
+describe customers;
+
+
 
 select first_name, last_name, phone_number from customers;
 
