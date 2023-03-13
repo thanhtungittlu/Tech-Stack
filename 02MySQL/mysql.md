@@ -1,7 +1,27 @@
 # SQL là gì? MySQL là gì?
 
-- SQl là ngôn ngữ truy vấn dữ liệu trong CSDL quan hệ. 
+- SQl là ngôn ngữ truy vấn dữ liệu trong CSDL quan hệ: Lưu trữ thông tin dưới dạng các bảng: có hàng và cột để đại diện cho những thuộc tính dữ liệu.
 - MySQL là một hệ quản trị cơ sở dữ liệu được sử dụng rất phổ biến. 
+
+# Tác dụng của SQL ?
+- Lưu và quản lý các dữ liệu có quan hệ.
+- Truy vấn được dữ liệu thông qua các câu lệnh querry.
+- Xử lý dữ liệu.
+- Đảm bảo tính toàn vẹn cho dữ liệu bằng cách thực hiện thiết lập các ràng buộc.
+- Phân tích dữ liệu
+
+# Khi nào nên dùng SQL ?   
+- Cần lưu trữ các các dữ liệu có mối quan hệ chặt chẽ với nhau.
+- Dữ liệu có tính tiêu chuẩn. 
+- Cần ứng dụng có độ tin cậy cao.
+- Yêu cầu về phân tích dữ liệu.
+
+# Khi nào nên dùng NoSQL?
+- Khi các ứng dụng cần lưu dữ liệu phi cấu trúc hoặc cấu trúc thay đổi liên tục.
+- Tốc độ truy xuất nhanh. 
+- Dữ liệu lớn và khả năng mở rộng cao.
+
+
 
 # Các loại dữ liệu phổ biến trong SQL
 

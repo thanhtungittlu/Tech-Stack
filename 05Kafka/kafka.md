@@ -1,13 +1,17 @@
 # Kafka là gì ?
 - Apache Kafka là một nền tảng stream dữ liệu phân tán.
+
 # Kafka dùng để làm gì ?
 - Publish và subscribe các stream của record (luồng dữ liệu).
 - Khả năng lưu trữ các stream of record một cách hiệu theo thứ tự các record được tạo.
 - Khả năng xử lý stream of record theo thời gian thực.
+
 # Vì sao nên sử dụng Kafka ?
 - Khả năng mở rộng: mô hình phân vùng nhật ký của Kafka cho phép dữ liệu của bạn có thể phân phối trên nhiều máy chủ và giúp bạn có thể mở rộng máy chủ mở rộng khi không còn phù hợp.
 - Nhanh: Với cách xử lý tách các luồng dữ liệu, vì thế độ trễ rất thấp làm cho tốc độ trở nên nhanh hơn.
 - Khả năng chịu lỗi và độ bền: Các gói dữ liệu của bạn có thể được sao chép và phân phối trên nhiều server khác nhau. Vì thế, khi có một sự cố xảy ra, dữ liệu của bạn ít bị lỗi hơn và bền hơn.
+
+
 # Các khái niệm:
 1. Producer: Ứng dụng này để gửi dữ liệu(message record) cho Kafka server.
 2. Consumer: Ứng dụng này để nhận dữ liệu(message record) từ Kafka server.
