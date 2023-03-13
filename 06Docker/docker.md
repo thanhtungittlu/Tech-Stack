@@ -31,4 +31,4 @@
 
         Ví dụ, để sao chép tệp index.html từ thư mục hiện tại vào thư mục /var/www/html trong image Docker, bạn có thể sử dụng chỉ thị ADD như sau: ADD index.html /var/www/html/
 
-- EXPOSE
+- EXPOSE: Để chỉ định địa chỉ IP của container, bạn có thể sử dụng chỉ thị EXPOSE như sau: EXPOSE 80

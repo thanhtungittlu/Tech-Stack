@@ -22,14 +22,11 @@ ADD . /home/mobio/projects/task_management
 
 ENV LC_ALL=en_US.UTF-8 \
    TASK_MANAGEMENT_HOME=/home/mobio/projects/task_management \
-   TASK_MANAGEMENT_FOLDER_NAME=task_management \
-   APPLICATION_DATA_DIR=/media/data/resources/ \
-   APPLICATION_LOGS_DIR=/media/data/logs/daily/
+   TASK_MANAGEMENT_FOLDER_NAME=task_management 
 
-ENV data_dir=$APPLICATION_DATA_DIR$TASK_MANAGEMENT_FOLDER_NAME \
-   log_dir=$APPLICATION_LOGS_DIR$TASK_MANAGEMENT_FOLDER_NAME \
-   monitor_log_dir=$APPLICATION_LOGS_DIR$TASK_MANAGEMENT_FOLDER_NAME/monitor_logs/
+ENV data_dir=$APPLICATION_DATA_DIR$TASK_MANAGEMENT_FOLDER_NAME 
 
+   
 RUN mkdir -p $data_dir $log_dir $monitor_log_dir
 
 WORKDIR $TASK_MANAGEMENT_HOME
